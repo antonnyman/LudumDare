@@ -1,16 +1,32 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="bros.sonymobile.ludumdare.MainActivity$PlaceholderFragment" >
+    android:paddingTop="@dimen/activity_vertical_margin" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/fragment_main_title"
+        android:layout_width="302dp"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:ems="10"
+        android:inputType="text" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/fragment_main_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <Button
+        android:id="@+id/fragment_main_send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_main_send_button" />
+
+</LinearLayout>

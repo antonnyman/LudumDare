@@ -4,5 +4,6 @@
     <string name="app_name">LudumDare</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="fragment_main_send_button">Send</string>
 
 </resources>
