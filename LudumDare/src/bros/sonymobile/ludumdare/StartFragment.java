@@ -31,18 +31,14 @@ public class StartFragment extends Fragment {
 		super.onStart();
 		Log.i("LudumDare", "OnStart");
 //		Respond to clicks on Send-button
-		getActivity().findViewById(R.id.fragment_main_send_button).setOnClickListener(new OnClickListener() {
-		
-			
+		getView().findViewById(R.id.fragment_main_send_button).setOnClickListener(new OnClickListener() {		
 		@Override
 		public void onClick(View v) {
 			
-		Log.i("LudumDare", "OnClick");
-			
 //		Create intent and find EditText-fields
 		Intent intent;
-		EditText editTextTitle = (EditText) v.findViewById(R.id.fragment_main_title);
-		EditText editTextBody = (EditText) v.findViewById(R.id.fragment_main_body);
+		EditText editTextTitle = (EditText) getView().findViewById(R.id.fragment_main_title);
+		EditText editTextBody = (EditText) getView().findViewById(R.id.fragment_main_body);
 		
 //		We intend to start the SonyExtensionService service.
 		intent = new Intent(getActivity(), SonyExtensionService.class);
